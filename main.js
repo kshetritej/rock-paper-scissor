@@ -12,6 +12,13 @@ function getcomputerChoice(){
             return 'scissor'
     }
 }
+function getplayerChoice (){
+  choice = prompt("Rock, paper or scissor").toLowerCase();
+  return choice;
+}
+
+const computerSelection = getcomputerChoice();
+const playerSelection = getplayerChoice();
 
 function playRound(computerSelection, playerSelection){
 
@@ -40,7 +47,7 @@ function playRound(computerSelection, playerSelection){
 
 function game(){
     for(let i = 1; i<=5; i++){
-        console.log(playRound(getcomputerChoice(),'paper'));
+        console.log(playRound(getcomputerChoice(),getplayerChoice()));
     }
     if(computerScore > playerScore){
             console.log('Computer won this round.');
