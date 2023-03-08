@@ -13,7 +13,6 @@ function getcomputerChoice(){
     }
 }
 
-
 function playRound(computerSelection, playerSelection){
 
     if(computerSelection == 'rock' && playerSelection == 'paper' ||
@@ -37,9 +36,7 @@ function playRound(computerSelection, playerSelection){
     else{
         return `Input ERR`;
     }
-
 }
-
 
 function game(){
     for(let i = 1; i<=5; i++){
