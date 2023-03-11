@@ -79,6 +79,21 @@ header{
   width: 50%;
   background-color: #fff;
   margin: 0 auto 1rem;
-  /* display: none; */
+  display: none;
 }
+
+/* Footer Styles */
+footer{
+  padding: 1rem;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.social-links > a{
+  color: #fff;
+}
+.github{
+  padding: 0 1rem 0;
+}
+
 
