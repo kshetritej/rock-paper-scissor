@@ -1,6 +1,28 @@
 let computerScore = 0;
 let playerScore = 0;
 
+function getplayerChoice(){
+    const choice = document.querySelectorAll('.svg');
+    choice.forEach(selection => {
+    selection.addEventListener('click',() =>{
+        if(selection.className == 'rock svg'){
+            console.log('rock');
+            return 'rock';
+        }
+        else if(selection.className == 'paper svg'){
+            console.log('paper');
+            return 'paper';
+        }
+        else if(selection.className == 'scissor svg'){
+            console.log('scissor');
+            return 'scissor';
+        }
+    });
+});
+}
+
+
+
 function getcomputerChoice(){
     const computerSelection = (Math.floor(Math.random() * 3))
     switch(computerSelection){
@@ -12,10 +34,10 @@ function getcomputerChoice(){
             return 'scissor'
     }
 }
-function getplayerChoice (){
-  choice = prompt("Rock, paper or scissor").toLowerCase();
-  return choice;
-}
+// function getplayerChoice (){
+//   choice = prompt("Rock, paper or scissor").toLowerCase();
+//   return choice;
+// }
 
 const computerSelection = getcomputerChoice();
 const playerSelection = getplayerChoice();
