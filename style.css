@@ -12,6 +12,10 @@
 body{
   background-color: #0b132b;
 }
+img{
+  width: 100%;
+  height: auto;
+}
 
 /*  HEADER SECTION STYLES */
 header{
@@ -43,3 +47,38 @@ header{
 .player{
   padding: 0 0 0.5rem;
 }
+
+/* Game activity styles */
+.game-activity{
+  background-color:var(--color-ternary);
+
+}
+.prompt{
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+.choices{
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.options{
+  background-color:var(--color-secondary);
+  padding: 0.5rem;
+  border-radius: 20px;
+  width: 150px;
+  height: auto;
+}
+.options:hover{
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+.result-box{
+  height: 5rem;
+  width: 50%;
+  background-color: #fff;
+  margin: 0 auto 1rem;
+  /* display: none; */
+}
+
