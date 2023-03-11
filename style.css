@@ -34,10 +34,12 @@ header{
   padding: 0.5rem;
   text-align: center;
   font-weight: 700;
+  display: none;
 }
 
 /* Score Board Styles */
 .score-board{
+  height: 30vh;
   background-color: var(--color-ternary);
   padding: 1rem;
   color: var(--color-white);
@@ -52,6 +54,7 @@ header{
 /* Game activity styles */
 .game-activity{
   background-color:var(--color-ternary);
+  height: 50vh;
 
 }
 .prompt{
@@ -66,14 +69,15 @@ header{
   gap: 2rem;
 }
 .options{
-  background-color:var(--color-secondary);
+  background-color:var(--color-white);
   padding: 0.5rem;
   border-radius: 20px;
   width: 150px;
   height: auto;
 }
 .options:hover{
-  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 1px solid;
 }
 .result-box{
   height: 5rem;
@@ -89,6 +93,7 @@ footer{
   color:var(--color-white);
   display: flex;
   justify-content: space-between;
+  margin: auto;
 }
 .social-links > a{
   color: var(--color-white);
