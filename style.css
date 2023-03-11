@@ -79,6 +79,10 @@ header{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border: 1px solid;
 }
+.svg{
+  border: none;
+  background-color: var(--color-white);
+}
 .result-box{
   height: 5rem;
   width: 50%;
