@@ -68,21 +68,19 @@ header{
   justify-content: center;
   gap: 2rem;
 }
-.options{
+.svg{
   background-color:var(--color-white);
   padding: 0.5rem;
   border-radius: 20px;
   width: 150px;
   height: auto;
+  border:none;
 }
-.options:hover{
+.svg:hover{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border: 1px solid;
 }
-.svg{
-  border: none;
-  background-color: var(--color-white);
-}
+
 .result-box{
   height: 5rem;
   width: 50%;
