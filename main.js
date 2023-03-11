@@ -44,21 +44,3 @@ function playRound(computerSelection, playerSelection){
         return `Input ERR`;
     }
 }
-
-function game(){
-    for(let i = 1; i<=5; i++){
-        console.log(playRound(getcomputerChoice(),getplayerChoice()));
-    }
-    if(computerScore > playerScore){
-            console.log('Computer won this round.');
-    }
-    else if(playerScore > computerScore){
-        console.log('Congratulations! you won this round.');
-    }
-    else{
-        console.log("Uff! what a tough game.");
-    }
-}
-
-
-game();
