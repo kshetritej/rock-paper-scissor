@@ -22,8 +22,6 @@ function playRound(playerSelection, computerSelection) {
     const resultBox = document.querySelector(".result");
     if (playerSelection == computerSelection) {
         resultBox.textContent = "Draw!!";
-        computerScore++;
-        playerScore++;
     }
     else if (playerSelection == "rock" && computerSelection == "paper" ||
         playerSelection == "paper" && computerSelection == "scissor" ||
@@ -37,7 +35,16 @@ function playRound(playerSelection, computerSelection) {
     }
     cpuScore.textContent = computerScore;
     humanScore.textContent = playerScore;
+
+    if (computerScore === 5 || playerScore === 5) {
+        // game is over, disable the buttons
+        const buttons = document.querySelectorAll("button");
+        buttons.forEach((button) => (button.disabled = true));
+
+        resultBox.textContent = `Game Over. RELOAD page to Play Again!!!`
+    }
 }
+
 
 function game() {
     const rockBtn = document.querySelector(".rock");
@@ -56,6 +63,7 @@ function game() {
         playRound("scissor", computerSelection);
     })
 }
+
 
 game();
 

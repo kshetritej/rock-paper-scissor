@@ -89,6 +89,9 @@ button:hover{
   color:var(--color-white);
   text-align: center;
 }
+.play-again{
+  display: none;
+}
 
 /* Footer Styles */
 footer{
