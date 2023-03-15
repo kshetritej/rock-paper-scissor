@@ -26,7 +26,7 @@ function playRound(playerSelection, computerSelection) {
     else if (playerSelection == "rock" && computerSelection == "paper" ||
         playerSelection == "paper" && computerSelection == "scissor" ||
         playerSelection == "scissor" && computerSelection == "rock") {
-        resultBox.textContent = `Computer Won! ${computerSelection} beats ${playerSelection}`;
+        resultBox.textContent = `You Lose! ${computerSelection} beats ${playerSelection}`;
         computerScore++;
     }
     else {
@@ -40,8 +40,15 @@ function playRound(playerSelection, computerSelection) {
         // game is over, disable the buttons
         const buttons = document.querySelectorAll("button");
         buttons.forEach((button) => (button.disabled = true));
-
-        resultBox.textContent = `Game Over. RELOAD page to Play Again!!!`
+        
+        if(playerScore ===5){
+          humanScore.textContent = `Winner`;
+          resultBox.textContent = `Game Over. RELOAD page to Play Again!!`;
+        }
+        else if(computerScore ===5){
+            cpuScore.textContent = `Winner`;
+            resultBox.textContent = `Game Over. RELOAD page to Play Again!!`;
+        }
     }
 }
 
