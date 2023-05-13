@@ -1,17 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800;900&display=swap');
 *{
   margin:0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Poppins",sans-serif;
 }
 :root{
   --color-primary: #0b132b;
   --color-secondary: #1c2541;
   --color-ternary: #3a506b;
   --color-white: #ffffff;
-}
-body{
-  background-color: var(--color-primary);
 }
 img{
   width: 100%;
@@ -95,17 +93,32 @@ button:hover{
 
 /* Footer Styles */
 footer{
+  margin-top: auto ;
+  background-color: var(--color-secondary);
   padding: 1rem;
   color:var(--color-white);
   display: flex;
-  justify-content: space-between;
-  margin: auto;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
 }
-.social-links > a{
-  color: var(--color-white);
+.uil-github{
+  font-size: 1.5rem;
 }
-.github{
-  padding: 0 1rem 0;
+a{
+  color: white;
+  text-decoration: none;
 }
 
+/* 
+  *Added Container Style, container is added later
+*/
+.container{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+body{
+  background-color:var(--color-ternary);
+}
 

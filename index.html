@@ -5,64 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
   </head>
   <body>
-    <header>
-      <h1 class="game-title">ROCK - PAPER - SCISSORS</h1>
-      <button class="info-btn">?</button>
-    </header>
+    <div class="container">
+      <header>
+        <h1 class="game-title">ROCK - PAPER - SCISSORS</h1>
+        <button class="info-btn">?</button>
+      </header>
 
-    <section class="score-board">
-      <div class="player-score">
-        <h1 class="player">You</h1>
-        <h2 class="human-score">0</h2>
-      </div>
-      <div class="player-score">
-        <h1 class="player">Computer</h1>
-        <h2 class="computer-score">0</h2>
-      </div>
-    </section>
+      <section class="score-board">
+        <div class="player-score">
+          <h1 class="player">You</h1>
+          <h2 class="human-score">0</h2>
+        </div>
+        <div class="player-score">
+          <h1 class="player">Computer</h1>
+          <h2 class="computer-score">0</h2>
+        </div>
+      </section>
+  
+      <section class="game-activity">
+        <h1 class="prompt">CHOOSE YOUR WEAPON</h1>
+        <div class="choices">
+          <button id="choiceBtn" class="rock">
+            <img src="./img/stone-axe-svgrepo-com.svg" alt="rock" />
+          </button>
+  
+          <button id="choiceBtn" class="paper">
+            <img src="./img/paper-svgrepo-com.svg" alt="paper" />
+          </button>
+  
+          <button id="choiceBtn" class="scissor">
+            <img src="./img/scissor-svgrepo-com.svg" alt="scissors" />
+          </button>
+        </div>
+        <div class="result-box">
+          <h2 class="result"></h2>
+        </div>
+      </section>
+      
+      <footer>
+        <p>Copyright  @kshetritej <span><a href="https://github.com/kshetritej"><i class="uil uil-github"></i></a></span></i></span></p>
+      </footer>
 
-    <section class="game-activity">
-      <h1 class="prompt">CHOOSE YOUR WEAPON</h1>
-      <div class="choices">
-        <button id="choiceBtn" class="rock">
-          <img src="./img/stone-axe-svgrepo-com.svg" alt="rock" />
-        </button>
+    </div>
 
-        <button id="choiceBtn" class="paper">
-          <img src="./img/paper-svgrepo-com.svg" alt="paper" />
-        </button>
 
-        <button id="choiceBtn" class="scissor">
-          <img src="./img/scissor-svgrepo-com.svg" alt="scissors" />
-        </button>
-      </div>
-      <div class="result-box">
-        <h2 class="result"></h2>
-      </div>
-    </section>
-
-    <footer>
-      <div class="credit-theodinproject">
-        <p>
-          Project by: Tej Bahadur Gharti Kshetri <br />
-          The Odin Project 2023
-        </p>
-      </div>
-      <div class="social-links">
-        <a href="https://github.com/kshetritej" target="_blank" class="github"
-          >GitHub</a
-        >
-        <a
-          href="https://www.linkedin.com/in/kshetritej/"
-          target="_blank"
-          class="linkedin"
-          >LinkedIn</a
-        >
-      </div>
-    </footer>
   </body>
 </html>
