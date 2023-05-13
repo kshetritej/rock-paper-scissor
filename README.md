@@ -6,9 +6,9 @@ Rock paper scissors (also known by other orderings of the three items, with "roc
 * Visual Studio Code
 * Git
 
-# API's or CDN's
-* [Iconscout CDN for Icons](https://iconscout.com)
-* [Google Fonts API](https://fonts.google.com)
+# CDNs
+* [Iconscout](https://iconscout.com)
+* [Google Fonts](https://fonts.google.com)
 
 # Live Preview
 [Here](https://kshetritej.github.io/rock-paper-scissor) 😇
