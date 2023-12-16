@@ -1,6 +1,8 @@
 const cpuScore = document.querySelector(".computer-score");
 const humanScore = document.querySelector(".human-score");
 
+const reload = document.querySelector('.reload-btn');
+
 let computerScore = 0;
 let playerScore = 0;
 //generate random computer choice
